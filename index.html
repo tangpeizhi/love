@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 tpz & lbb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 飘落的爱心背景 -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <!-- ========== 登录页 ========== -->
+    <div class="page active" id="loginPage">
+        <div class="auth-card">
+            <div class="auth-emoji">🔐</div>
+            <h2>欢迎回来</h2>
+            <p class="subtitle">登录后进入专属世界</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="loginUser" placeholder="用户名" required autocomplete="username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPass" placeholder="密码" required autocomplete="current-password">
+                </div>
+                <p class="error-msg" id="loginError"></p>
+                <button type="submit" class="btn-primary">登 录</button>
+            </form>
+            <p class="switch-link">还没有账号？<a href="#" id="toRegister">立即注册</a></p>
+        </div>
+    </div>
+
+    <!-- ========== 注册页 ========== -->
+    <div class="page" id="registerPage">
+        <div class="auth-card">
+            <div class="auth-emoji">✨</div>
+            <h2>创建账号</h2>
+            <p class="subtitle">加入 tpz & lbb 的世界</p>
+            <form id="registerForm">
+                <div class="input-group">
+                    <input type="text" id="regUser" placeholder="用户名" required autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="regPass" placeholder="密码（至少8位）" required autocomplete="new-password" maxlength="20">
+                    <span class="pass-hint" id="passHint">0 / 8</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="regPass2" placeholder="确认密码" required autocomplete="new-password">
+                </div>
+                <p class="error-msg" id="regError"></p>
+                <button type="submit" class="btn-primary">注 册</button>
+            </form>
+            <p class="switch-link">已有账号？<a href="#" id="toLogin">去登录</a></p>
+        </div>
+    </div>
+
+    <!-- ========== 表白主页 ========== -->
+    <div class="page" id="lovePage">
+        <!-- 顶部导航 -->
+        <nav class="love-nav">
+            <span class="nav-title">💕 tpz & lbb</span>
+            <button class="btn-logout" id="logoutBtn">退出登录</button>
+        </nav>
+
+        <!-- Hero 区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="name-left">tpz</span>
+                    <span class="heart-beat">❤️</span>
+                    <span class="name-right">lbb</span>
+                </h1>
+                <p class="hero-subtitle">遇见你，是最美丽的意外</p>
+            </div>
+        </section>
+
+        <!-- 时间线 -->
+        <section class="timeline-section">
+            <h2 class="section-title">💌 我们的故事</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot">🌸</div>
+                    <div class="timeline-card">
+                        <h3>初次相遇</h3>
+                        <p>在茫茫人海中，tpz 第一次看见了 lbb，那一刻，时间仿佛静止了。</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot">🌟</div>
+                    <div class="timeline-card">
+                        <h3>心动瞬间</h3>
+                        <p>lbb 的一个微笑，让 tpz 的世界从此有了色彩，每一天都变得值得期待。</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot">💌</div>
+                    <div class="timeline-card">
+                        <h3>勇敢表白</h3>
+                        <p>tpz 鼓起勇气，对 lbb 说出了那句藏在心底很久的话："我喜欢你。"</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot">💑</div>
+                    <div class="timeline-card">
+                        <h3>在一起</h3>
+                        <p>从那天起，tpz 和 lbb 一起看日出日落，一起走过春夏秋冬。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 表白墙 -->
+        <section class="confession-section">
+            <h2 class="section-title">💗 表白墙</h2>
+            <div class="confession-wall">
+                <div class="confession-card" style="--delay: 0s">
+                    <p>"lbb，你是我见过最温柔的人，能遇见你是我最大的幸运。"</p>
+                    <span class="from">—— tpz</span>
+                </div>
+                <div class="confession-card" style="--delay: 0.2s">
+                    <p>"tpz，谢谢你一直陪在我身边，有你在的地方就是家。"</p>
+                    <span class="from">—— lbb</span>
+                </div>
+                <div class="confession-card" style="--delay: 0.4s">
+                    <p>"我想和你一起慢慢变老，看遍世间所有的风景。"</p>
+                    <span class="from">—— tpz to lbb</span>
+                </div>
+                <div class="confession-card" style="--delay: 0.6s">
+                    <p>"你笑起来真好看，像春天的花一样，温暖了我整个世界。"</p>
+                    <span class="from">—— lbb to tpz</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 承诺 -->
+        <section class="promise-section">
+            <h2 class="section-title">💍 我的承诺</h2>
+            <div class="promise-grid">
+                <div class="promise-card">
+                    <div class="promise-icon">🌅</div>
+                    <h3>陪你每一天</h3>
+                    <p>从清晨到日暮，从春天到冬天，每一天都想和你在一起。</p>
+                </div>
+                <div class="promise-card">
+                    <div class="promise-icon">🛡️</div>
+                    <h3>保护你</h3>
+                    <p>不管遇到什么困难，我都会挡在你前面，为你遮风挡雨。</p>
+                </div>
+                <div class="promise-card">
+                    <div class="promise-icon">🎯</div>
+                    <h3>永远忠诚</h3>
+                    <p>你是我唯一的选择，我的心只为你跳动。</p>
+                </div>
+                <div class="promise-card">
+                    <div class="promise-icon">🌱</div>
+                    <h3>一起成长</h3>
+                    <p>我们互相鼓励，一起变成更好的人。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer class="love-footer">
+            <p>💕 tpz ❤️ lbb 💕</p>
+            <p class="footer-sub">永远在一起 · 2026</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
